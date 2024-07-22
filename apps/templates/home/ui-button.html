@@ -1,232 +1,85 @@
 {% extends "layouts/base.html" %}
-
-{% block title %} Ui Buttons {% endblock %} 
-
+{% block title %} Data Table {% endblock %}
+<noscript></noscript>
 <!-- Specific CSS goes HERE -->
-{% block stylesheets %}{% endblock stylesheets %}
-
+{% block stylesheets %}
+<style>
+    .btn-custom {
+        background-color: white;
+        color: black;
+        border: 1px solid #ddd;
+    }
+    .btn-custom:hover {
+        background-color: #f8f9fa;
+        color: black;
+    }
+    .btn-custom.active {
+        background-color: #e9ecef;
+        color: black;
+    }
+</style>
+{% endblock stylesheets %}
 {% block content %}
-
-<div class="pcoded-content">
-    <div class="pcoded-inner-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-            <div class="page-block">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="page-header-title">
-                            <h5 class="m-b-10">Button</h5>
-                        </div>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="javascript:">Basic Componants</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:">Button</a></li>
-                        </ul>
-                    </div>
-                </div>
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-header">
+            <h5>Data Table</h5>
+            <div class="btn-group" role="group" aria-label="Data Type Selection">
+                <button type="button" class="btn btn-custom active" onclick="changeDataType('generation', this)">Generation</button>
+                <button type="button" class="btn btn-custom" onclick="changeDataType('reservoir', this)">Reservoir Level</button>
+                <button type="button" class="btn btn-custom" onclick="changeDataType('inflow', this)">Inflow</button>
             </div>
         </div>
-        <!-- [ breadcrumb ] end -->
-        <div class="main-body">
-            <div class="page-wrapper">
-                <!-- [ Main Content ] start -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Default</h5>
-                            </div>
-                            <div class="card-block">
-                                <button type="button" class="btn btn-primary" title="btn btn-primary" data-toggle="tooltip">Primary</button>
-                                <button type="button" class="btn btn-secondary" title="btn btn-secondary" data-toggle="tooltip">Secondary</button>
-                                <button type="button" class="btn btn-success" title="btn btn-success" data-toggle="tooltip">Success</button>
-                                <button type="button" class="btn btn-danger" title="btn btn-danger" data-toggle="tooltip">Danger</button>
-                                <button type="button" class="btn btn-warning" title="btn btn-warning" data-toggle="tooltip">Warning</button>
-                                <button type="button" class="btn btn-info" title="btn btn-info" data-toggle="tooltip">Info</button>
-                                <button type="button" class="btn btn-light" title="btn btn-light" data-toggle="tooltip">Light</button>
-                                <button type="button" class="btn btn-dark" title="btn btn-dark" data-toggle="tooltip">Dark</button>
-                                <button type="button" class="btn btn-link" title="btn btn-link" data-toggle="tooltip">Link</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Outline</h5>
-                            </div>
-                            <div class="card-block">
-                                <button type="button" class="btn btn-outline-primary" title="btn btn-outline-primary" data-toggle="tooltip">Primary</button>
-                                <button type="button" class="btn btn-outline-secondary" title="btn btn-outline-secondary" data-toggle="tooltip">Secondary</button>
-                                <button type="button" class="btn btn-outline-success" title="btn btn-outline-success" data-toggle="tooltip">Success</button>
-                                <button type="button" class="btn btn-outline-danger" title="btn btn-outline-danger" data-toggle="tooltip">Danger</button>
-                                <button type="button" class="btn btn-outline-warning" title="btn btn-outline-warning" data-toggle="tooltip">Warning</button>
-                                <button type="button" class="btn btn-outline-info" title="btn btn-outline-info" data-toggle="tooltip">Info</button>
-                                <button type="button" class="btn btn-outline-light" title="btn btn-outline-light" data-toggle="tooltip">Light</button>
-                                <button type="button" class="btn btn-outline-dark" title="btn btn-outline-dark" data-toggle="tooltip">Dark</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Square Button</h5>
-                            </div>
-                            <div class="card-block">
-                                <p>use <code>.btn-square</code> in class <code>.btn</code> class to get square button</p>
-                                <button type="button" class="btn btn-square btn-primary">Primary</button>
-                                <button type="button" class="btn btn-square btn-secondary">Secondary</button>
-                                <button type="button" class="btn btn-square btn-success">Success</button>
-                                <button type="button" class="btn btn-square btn-danger">Danger</button>
-                                <button type="button" class="btn btn-square btn-warning">Warning</button>
-                                <button type="button" class="btn btn-square btn-info">Info</button>
-                                <button type="button" class="btn btn-square btn-light">Light</button>
-                                <button type="button" class="btn btn-square btn-dark">Dark</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Basic Dropdown Button</h5>
-                            </div>
-                            <div class="card-block">
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Split Dropdown Button</h5>
-                            </div>
-                            <div class="card-block">
-                                <!-- Example split danger button -->
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                                <div class="btn-group mb-2 mr-2">
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Separated link</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="card-block table-border-style">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Timestamp</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTableBody">
+                        <tr><th scope="row">1</th><td>2024-01-01T00:00:00</td><td>77.42</td></tr>
+                        <tr><th scope="row">2</th><td>2024-01-01T01:00:00</td><td>78.32</td></tr>
+                        <tr><th scope="row">3</th><td>2024-01-01T02:00:00</td><td>68.35</td></tr>
+                        <tr><th scope="row">4</th><td>2024-01-01T03:00:00</td><td>67.03</td></tr>
+                        <tr><th scope="row">5</th><td>2024-01-01T04:00:00</td><td>71.72</td></tr>
+                        <tr><th scope="row">6</th><td>2024-01-01T05:00:00</td><td>63.35</td></tr>
+                        <tr><th scope="row">7</th><td>2024-01-01T06:00:00</td><td>75.74</td></tr>
+                        <tr><th scope="row">8</th><td>2024-01-01T07:00:00</td><td>75.77</td></tr>
+                        <tr><th scope="row">9</th><td>2024-01-01T08:00:00</td><td>62.53</td></tr>
+                        <tr><th scope="row">10</th><td>2024-01-01T09:00:00</td><td>73.90</td></tr>
+                        <tr><th scope="row">11</th><td>2024-01-01T10:00:00</td><td>77.81</td></tr>
+                        <tr><th scope="row">12</th><td>2024-01-01T11:00:00</td><td>67.77</td></tr>
+                        <tr><th scope="row">13</th><td>2024-01-01T12:00:00</td><td>67.94</td></tr>
+                        <tr><th scope="row">14</th><td>2024-01-01T13:00:00</td><td>66.82</td></tr>
+                        <tr><th scope="row">15</th><td>2024-01-01T14:00:00</td><td>66.97</td></tr>
+                        <tr><th scope="row">16</th><td>2024-01-01T15:00:00</td><td>71.46</td></tr>
+                        <tr><th scope="row">17</th><td>2024-01-01T16:00:00</td><td>76.93</td></tr>
+                        <tr><th scope="row">18</th><td>2024-01-01T17:00:00</td><td>73.63</td></tr>
+                        <tr><th scope="row">19</th><td>2024-01-01T18:00:00</td><td>69.65</td></tr>
+                        <tr><th scope="row">20</th><td>2024-01-01T19:00:00</td><td>64.17</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
-
-
 {% endblock content %}
+<!-- Specific Page JS goes HERE -->
+{% block javascripts %}
+<script>
+function changeDataType(type, button) {
+    // Remove 'active' class from all buttons
+    document.querySelectorAll('.btn-custom').forEach(btn => btn.classList.remove('active'));
+    
+    // Add 'active' class to the clicked button
+    button.classList.add('active');
 
-<!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+    console.log("Changing data type to: " + type);
+    // You would typically make an AJAX call here to fetch new data and update the table
+}
+</script>
+{% endblock javascripts %}

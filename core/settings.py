@@ -1,11 +1,14 @@
-# -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
+
 
 import os
 from decouple import config
 from unipath import Path
+import pymysql
+pymysql.install_as_MySQLdb()
+
+
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).parent
@@ -30,7 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.home'  # Enable the inner home (home)
+    'apps.home',  # Enable the inner home (home)
+    'apps.authentication',  # Add your authentication app
 ]
 
 MIDDLEWARE = [
@@ -72,10 +76,20 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('DB_NAME', default='defaultdb'),
+        'USER': config('DB_USER', default='avnadmin'),
+        'PASSWORD': config('DB_PASSWORD', default='AVNS_5RG3ixLOO6L1IRdRAC9'),
+        'HOST': config('DB_HOST', default='stock100-swopnil100-1453.h.aivencloud.com'),
+        'PORT': config('DB_PORT', default='11907'),
     }
 }
+AUTH_USER_MODEL = 'authentication.CustomUser'
+
+AUTHENTICATION_BACKENDS = [
+    'apps.authentication.backends.CustomAuthBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

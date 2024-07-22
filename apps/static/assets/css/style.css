@@ -3,7 +3,7 @@
 Template Name: Datta Able Admin Template
 Author: Codedthemes
 supports: https://codedthemes.support-hub.io/
-File: style.css
+File: le.css
 =========================================================================
 =========================================================================
   == Table of Contents==
@@ -60,11 +60,12 @@ File: style.css
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #888;
+  color: #1e0707;
   font-weight: 400;
-  background: #f4f7fa;
+  background: #9e9e9e00;
   position: relative;
 }
+
 
 *:focus {
   outline: none;
@@ -73,8 +74,8 @@ body {
 a:hover {
   outline: none;
   text-decoration: none;
+  
 }
-
 h1,
 h2,
 h3,
@@ -478,7 +479,7 @@ p.text-muted {
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #f3f2fb;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-le: -ms-autohiding-scrollbar;
 }
 @media only screen and (max-height: 575px) {
   .highlight {
@@ -510,7 +511,7 @@ p.text-muted {
 }
 
 /* =======================================================================
- ===============     Ui kit copy model style      ====================== */
+ ===============     Ui kit copy model le      ====================== */
 /* Code examples */
 .datta-example {
   position: relative;
@@ -659,7 +660,7 @@ p.text-muted {
   height: 12rem;
 }
 
-/* editor style for model */
+/* editor le for model */
 .hljs {
   padding: 0.5em;
   color: #abb2bf;
@@ -669,7 +670,7 @@ p.text-muted {
 .hljs-comment,
 .hljs-quote {
   color: #5c6370;
-  font-style: italic;
+  font-le: italic;
 }
 
 .hljs-doctag,
@@ -724,7 +725,7 @@ p.text-muted {
 }
 
 .hljs-emphasis {
-  font-style: italic;
+  font-le: italic;
 }
 
 .hljs-strong {
@@ -750,7 +751,7 @@ p.text-muted {
   width: 0;
   height: 0;
   border-color: transparent;
-  border-style: solid;
+  border-le: solid;
 }
 .tooltip.top {
   padding: 5px 0;
@@ -852,7 +853,7 @@ p.text-muted {
   margin: 50px 0;
 }
 .ie-warning .iew-download {
-  list-style: none;
+  list-le: none;
   padding: 30px 0;
   margin: 0 auto;
   width: 720px;
@@ -880,14 +881,14 @@ p.text-muted {
 /* fallback */
 @font-face {
   font-family: 'Material Icons';
-  font-style: normal;
+  font-le: normal;
   font-weight: 400;
   src: url("https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format("woff2");
 }
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
-  font-style: normal;
+  font-le: normal;
   font-size: 24px;
   line-height: 1;
   letter-spacing: normal;
@@ -1717,7 +1718,7 @@ p.text-muted {
 }
 .pcoded-header .navbar-nav {
   padding-left: 0;
-  list-style: none;
+  list-le: none;
   margin-bottom: 0;
   display: inline-block;
 }
@@ -1917,7 +1918,7 @@ p.text-muted {
 .pcoded-header .dropdown .notification ul {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  list-le: none;
 }
 .pcoded-header .dropdown .notification ul li {
   padding: 20px 15px;
@@ -1959,7 +1960,7 @@ p.text-muted {
 .pcoded-header .dropdown .profile-notification .pro-body {
   padding: 20px 0;
   margin-bottom: 0;
-  list-style: none;
+  list-le: none;
 }
 .pcoded-header .dropdown .profile-notification .pro-body li a {
   color: #888;
@@ -2073,7 +2074,7 @@ p.text-muted {
 }
 .pcoded-navbar ul {
   padding-left: 0;
-  list-style: none;
+  list-le: none;
   margin-bottom: 0;
 }
 .pcoded-navbar .scroll-div.navbar-content {
@@ -2550,7 +2551,7 @@ p.text-muted {
 }
 .pcoded-navbar.theme-horizontal .pcoded-inner-navbar {
   display: block;
-  list-style: none;
+  list-le: none;
   margin: 0;
   padding: 0;
   position: relative;
@@ -2563,7 +2564,7 @@ p.text-muted {
 }
 .pcoded-navbar.theme-horizontal .pcoded-inner-navbar > li {
   display: inline-block;
-  list-style: outside none none;
+  list-le: outside none none;
   margin: 0;
   padding: 0;
   position: relative;
@@ -2638,8 +2639,8 @@ p.text-muted {
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  -webkit-transform-le: preserve-3d;
+          transform-le: preserve-3d;
   -webkit-transform: rotateX(-90deg);
           transform: rotateX(-90deg);
   position: absolute;
@@ -2647,7 +2648,7 @@ p.text-muted {
   display: block;
   z-index: 1;
   top: 100%;
-  list-style: outside none none;
+  list-le: outside none none;
   margin: 0;
   border-radius: 4px;
   padding: 15px;
@@ -2949,6 +2950,12 @@ p.text-muted {
     left: 0;
     right: 0;
   }
+  .text-sm .content-header {
+    padding: 10px 0.5rem;
+}
+.text-sm {
+  font-size: .875rem!important;
+}
 
   .header-chat.open,
   .header-user-list.open {
@@ -3098,27 +3105,27 @@ p.text-muted {
             transform: translateY(0);
   }
 }
-.menu-styler {
+.menu-ler {
   z-index: 1029;
   position: relative;
   color: #888;
 }
-.menu-styler h5,
-.menu-styler h6 {
+.menu-ler h5,
+.menu-ler h6 {
   color: #111;
   font-weight: 400;
 }
-.menu-styler hr {
+.menu-ler hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-.menu-styler .style-toggler > a {
+.menu-ler .le-toggler > a {
   position: fixed;
   right: 0;
   top: 30vh;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.menu-styler .style-toggler > a:before {
+.menu-ler .le-toggler > a:before {
   content: "\62";
   top: 0;
   font-size: 120px;
@@ -3135,7 +3142,7 @@ p.text-muted {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.menu-styler .style-toggler > a:after {
+.menu-ler .le-toggler > a:after {
   content: "\e8c3";
   top: -7px;
   font-size: 18px;
@@ -3151,26 +3158,26 @@ p.text-muted {
           animation: anim-rotate 1.5s linear infinite;
 }
 @media all and (-ms-high-contrast: none) {
-  .menu-styler .style-toggler > a:after {
+  .menu-ler .le-toggler > a:after {
     line-height: 0.5;
   }
 }
-.menu-styler.open .style-toggler > a {
+.menu-ler.open .le-toggler > a {
   right: 400px;
 }
-.menu-styler.open .style-toggler > a:after {
+.menu-ler.open .le-toggler > a:after {
   content: "\e847";
   top: -7px;
   font-size: 18px;
   -webkit-animation: anim-rotate 0s linear infinite;
           animation: anim-rotate 0s linear infinite;
 }
-.menu-styler.open .style-block {
+.menu-ler.open .le-block {
   right: 0;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-.menu-styler .style-block {
+.menu-ler .le-block {
   position: fixed;
   top: 0;
   right: -400px;
@@ -3182,28 +3189,28 @@ p.text-muted {
   transition: 0.3s ease-in-out;
   padding: 25px 20px 20px;
 }
-.menu-styler .mst-scroll {
+.menu-ler .mst-scroll {
   height: calc(100vh - 175px);
   background-color: rgba(4, 169, 245, 0.03);
   padding: 0 15px;
 }
-.menu-styler label {
+.menu-ler label {
   margin-bottom: 3px;
 }
-.menu-styler .switch input[type=checkbox] + .cr {
+.menu-ler .switch input[type=checkbox] + .cr {
   top: 8px;
 }
-.menu-styler .radio input[type=radio] + .cr {
+.menu-ler .radio input[type=radio] + .cr {
   margin-right: 10px;
 }
-.menu-styler .radio input[type=radio] + .cr:after, .menu-styler .radio input[type=radio] + .cr:before {
+.menu-ler .radio input[type=radio] + .cr:after, .menu-ler .radio input[type=radio] + .cr:before {
   margin-right: 3px;
 }
-.menu-styler h6 {
+.menu-ler h6 {
   position: relative;
   margin: 10px 0 15px;
 }
-.menu-styler h6:after {
+.menu-ler h6:after {
   content: "";
   background-color: #04a9f5;
   position: absolute;
@@ -3212,15 +3219,15 @@ p.text-muted {
   width: 40px;
   height: 2px;
 }
-.menu-styler .nav-pills {
+.menu-ler .nav-pills {
   padding: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.menu-styler .nav-pills li {
+.menu-ler .nav-pills li {
   width: calc(100% / 3);
 }
-.menu-styler .tab-content {
+.menu-ler .tab-content {
   padding: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3228,7 +3235,7 @@ p.text-muted {
   border-top: 2px solid #04a9f5;
 }
 @media only screen and (max-width: 992px) {
-  .menu-styler {
+  .menu-ler {
     display: none;
   }
 }
@@ -3675,9 +3682,9 @@ p.text-muted {
 }
 
 /* ===================================================================================
- ==========================    Diffrent Layout Styles Start     ====================
+ ==========================    Diffrent Layout les Start     ====================
  ===================================================================================
- ====== [ light menu style start ] ======== */
+ ====== [ light menu le start ] ======== */
 .pcoded-navbar.menu-light {
   background-color: #fff;
   color: #3f4d67;
@@ -3733,7 +3740,7 @@ p.text-muted {
   color: #fff;
 }
 
-/* ====== [ light menu style end ] ======== */
+/* ====== [ light menu le end ] ======== */
 /* ====== [ Menu icon start ] ======== */
 .pcoded-navbar.icon-colored .pcoded-inner-navbar > li:nth-child(1) > a > .pcoded-micon {
   color: #04a9f5;
@@ -4683,10 +4690,10 @@ p.text-muted {
 
 /* ====== [ Menu color end ] ======== */
 /* ====== [ Active Color start ] ======== */
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #3ebfea;
 }
-.pcoded-navbar.active-blue[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar.active-blue[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #04a9f5;
 }
 .pcoded-navbar.active-blue .pcoded-inner-navbar li.active > a, .pcoded-navbar.active-blue .pcoded-inner-navbar li:focus > a, .pcoded-navbar.active-blue .pcoded-inner-navbar li:hover > a {
@@ -4712,10 +4719,10 @@ p.text-muted {
 .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.active > a, .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li:hover > a, .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.active > a, .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-blue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li:hover > a {
   color: #04a9f5;
 }
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #3ebfea;
 }
-.pcoded-navbar.active-red[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar.active-red[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #ff5252;
 }
 .pcoded-navbar.active-red .pcoded-inner-navbar li.active > a, .pcoded-navbar.active-red .pcoded-inner-navbar li:focus > a, .pcoded-navbar.active-red .pcoded-inner-navbar li:hover > a {
@@ -4741,10 +4748,10 @@ p.text-muted {
 .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.active > a, .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li:hover > a, .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.active > a, .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-red.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li:hover > a {
   color: #ff5252;
 }
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #3ebfea;
 }
-.pcoded-navbar.active-purple[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar.active-purple[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #9575CD;
 }
 .pcoded-navbar.active-purple .pcoded-inner-navbar li.active > a, .pcoded-navbar.active-purple .pcoded-inner-navbar li:focus > a, .pcoded-navbar.active-purple .pcoded-inner-navbar li:hover > a {
@@ -4770,10 +4777,10 @@ p.text-muted {
 .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.active > a, .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li:hover > a, .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.active > a, .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-purple.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li:hover > a {
   color: #9575CD;
 }
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #3ebfea;
 }
-.pcoded-navbar.active-lightblue[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar.active-lightblue[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #23b7e5;
 }
 .pcoded-navbar.active-lightblue .pcoded-inner-navbar li.active > a, .pcoded-navbar.active-lightblue .pcoded-inner-navbar li:focus > a, .pcoded-navbar.active-lightblue .pcoded-inner-navbar li:hover > a {
@@ -4799,10 +4806,10 @@ p.text-muted {
 .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.active > a, .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li .pcoded-submenu > li:hover > a, .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.active > a, .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li.pcoded-trigger > a, .pcoded-navbar.active-lightblue.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu .pcoded-submenu > li:hover > a {
   color: #23b7e5;
 }
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #3ebfea;
 }
-.pcoded-navbar.active-dark[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
+.pcoded-navbar.active-dark[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li.active > a:before {
   color: #323437;
 }
 .pcoded-navbar.active-dark .pcoded-inner-navbar li.active > a, .pcoded-navbar.active-dark .pcoded-inner-navbar li:focus > a, .pcoded-navbar.active-dark .pcoded-inner-navbar li:hover > a {
@@ -4882,25 +4889,25 @@ body.box-layout .pcoded-navbar.theme-horizontal ~ .pcoded-header {
 
 /* ====== [Header Fixed  end ] ======== */
 /* ====== [ Dropdown icon start ] ======== */
-.pcoded-navbar.drp-icon-style2 .pcoded-inner-navbar li.pcoded-hasmenu > a:after {
+.pcoded-navbar.drp-icon-le2 .pcoded-inner-navbar li.pcoded-hasmenu > a:after {
   content: "\e847";
 }
-.pcoded-navbar.drp-icon-style3 .pcoded-inner-navbar li.pcoded-hasmenu > a:after {
+.pcoded-navbar.drp-icon-le3 .pcoded-inner-navbar li.pcoded-hasmenu > a:after {
   content: "\e8b1";
 }
-.pcoded-navbar.drp-icon-style3 .pcoded-inner-navbar li.pcoded-hasmenu.pcoded-trigger > a:after {
+.pcoded-navbar.drp-icon-le3 .pcoded-inner-navbar li.pcoded-hasmenu.pcoded-trigger > a:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 /* ====== [ Dropdown icon end ] =================== */
 /* ====== [ Menu Item icon start ] ================ */
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li.pcoded-trigger .pcoded-submenu:after {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-navbar.navbar-collapsed .pcoded-inner-navbar > li.pcoded-trigger .pcoded-submenu:after {
   background: rgba(169, 183, 208, 0.05);
 }
-.pcoded-navbar[class*="menu-item-icon-style"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"] .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   font-family: 'feather';
-  font-style: normal;
+  font-le: normal;
   padding-right: 4px;
   font-size: 13px;
   position: absolute;
@@ -4910,25 +4917,25 @@ body.box-layout .pcoded-navbar.theme-horizontal ~ .pcoded-header {
   visibility: visible;
   background: transparent;
 }
-.pcoded-navbar[class*="menu-item-icon-style"].theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu > .pcoded-submenu > li > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"].theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu > .pcoded-submenu > li > a:before {
   left: 5px;
 }
-.pcoded-navbar[class*="menu-item-icon-style"].theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu > .pcoded-submenu > li > .pcoded-submenu > li > a:before {
+.pcoded-navbar[class*="menu-item-icon-le"].theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu > .pcoded-submenu > li > .pcoded-submenu > li > a:before {
   top: 12px;
 }
-.pcoded-navbar.menu-item-icon-style2 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar.menu-item-icon-le2 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   content: "\e897";
 }
-.pcoded-navbar.menu-item-icon-style3 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar.menu-item-icon-le3 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   content: "\e83f";
 }
-.pcoded-navbar.menu-item-icon-style4 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar.menu-item-icon-le4 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   content: "\e856";
 }
-.pcoded-navbar.menu-item-icon-style5 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar.menu-item-icon-le5 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   content: "\e847";
 }
-.pcoded-navbar.menu-item-icon-style6 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
+.pcoded-navbar.menu-item-icon-le6 .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li > a:before {
   content: "\e844";
 }
 
@@ -4996,7 +5003,7 @@ body.box-layout .pcoded-navbar.theme-horizontal ~ .pcoded-header {
 }
 
 /* ====== [ Hide Caption end ] ================ */
-/* ==========================    Diffrent Layout Styles end     ====================== */
+/* ==========================    Diffrent Layout les end     ====================== */
 /* temp SCSS for document */
 .doc-img > a {
   position: relative;
@@ -5218,7 +5225,7 @@ body.box-layout .pcoded-navbar.theme-horizontal ~ .pcoded-header {
   }
 }
 /* ===================================================================================================
- ==========================    Diffrent types of NAvbar Layout Styles end     ======================
+ ==========================    Diffrent types of NAvbar Layout les end     ======================
  =================================================================================================== */
 .pcoded-navbar.layout-2 a, .pcoded-navbar.layout-2-2 a, .pcoded-navbar.layout-3 a, .pcoded-navbar.layout-4 a, .pcoded-navbar.layout-4-2 a {
   color: rgba(255, 255, 255, 0.85);
@@ -5336,7 +5343,7 @@ body.layout-6 {
   background-attachment: fixed;
   background-position: top right;
   position: relative;
-  /* for able pro style */
+  /* for able pro le */
   /* dark navbar */
 }
 body.layout-6 .page-header-title + .breadcrumb > .breadcrumb-item:last-child a,
@@ -5882,7 +5889,7 @@ body.layout-8 .card:hover {
 .post-emoticon ul {
   padding: 0;
   margin: 25px 0 0;
-  list-style: none;
+  list-le: none;
 }
 .post-emoticon li {
   display: inline-block;
@@ -5920,7 +5927,7 @@ body.layout-8 .card:hover {
 .dashboard-kit .design-image {
   padding: 0;
   margin: 30px 0 0;
-  list-style: none;
+  list-le: none;
 }
 .Design-sprint li,
 .dashboard-kit li {
@@ -5961,7 +5968,7 @@ body.layout-8 .card:hover {
 }
 
 .task-list {
-  list-style: none;
+  list-le: none;
   position: relative;
   margin: 0;
   padding: 30px 0 0;
@@ -6987,7 +6994,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
-  list-style: none;
+  list-le: none;
   font-size: 14px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -7562,7 +7569,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
 }
 /**====== Authentication css end ======**/
 /* Button variants
- Easily pump out default styles, as well as :hover, :focus, :active,
+ Easily pump out default les, as well as :hover, :focus, :active,
  and disabled options for all buttons */
 /**  =====================
       Button css start
@@ -8180,7 +8187,7 @@ a.btn-theme.active {
                            /**  =====================
       Alert css start
 ==========================  **/
-/* Base styles */
+/* Base les */
 .alert {
   position: relative;
   padding: 15px 20px;
@@ -8204,7 +8211,7 @@ a.btn-theme.active {
   padding: 14px 10px;
 }
 
-/* Alternate styles
+/* Alternate les
  Generate contextual modifier classes for colorizing the alert. */
 .alert-primary {
   color: #1c7aa5;
@@ -8527,7 +8534,7 @@ a.btn-theme.active {
       flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  list-le: none;
 }
 
 .nav-link {
@@ -9615,8 +9622,8 @@ div.code-toolbar > .toolbar span:hover {
 }
 
 .peity-chart + .peity {
-  width: 100%;
-  height: 250px;
+  width: 200%;
+  height: 350px;
 }
 
 /* Radial Chart Start */
@@ -10211,7 +10218,7 @@ div.code-toolbar > .toolbar span:hover {
   display: none;
 }
 .dropzone.dz-drag-hover {
-  border-style: solid;
+  border-le: solid;
 }
 .dropzone.dz-drag-hover .dz-message {
   opacity: 0.5;
