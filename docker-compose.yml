@@ -20,6 +20,7 @@ services:
       - web_network
     depends_on: 
       - appseed-app
+      
 networks:
   db_network:
     driver: bridge
